@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>web page</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+      <div class="container py-5">
+      <form>
+        <div class="mb-3">
+          <label for="productName">Product Name</label>
+          <input type="text" class="form-control" name="" id="productName">
+        </div>
+        <div class="mb-3">
+          <label for="productPrice">Product Price</label>
+          <input type="number" class="form-control" name="" id="productPrice">
+        </div>
+        <div class="mb-3">
+          <label for="productImage">Product Image</label>
+          <input type="file" class="form-control" name="" id="productImage">
+        </div>
+        <div class="mb-3">
+          <label for="productCategory">Product Category</label>
+  
+          <select class="form-select" id="productCategory" >
+            <option value="tv">TV</option>
+            <option value="mobile">Mobile</option>
+            <option value="fashion">Fashion</option>
+            <option value="laptop">Laptop</option>
+            <option value="car">cars</option>
+          </select>
+        </div>
+        <div class="form-check form-switch mb-3">
+          <input class="form-check-input"  type="checkbox" role="switch" id="productSale">
+          <label class="form-check-label" for="productSale">product Sale</label>
+        </div>
+  
+        <div class="mb-3">
+          <label for="productDescription">Product Description</label>
+  
+          <textarea name="" class="form-control" id="productDescription"></textarea>
+        </div>
+  
+        <button id="AddProduct" type="button" class="btn btn-outline-info">Add Product</button>
+        <button id="updateProduct" type="button" class="btn btn-outline-warning" onclick="insertUpdate()">Ubdate Product</button>
+        <button id="ClearForm" type="button" class="btn btn-outline-danger">Clear Form</button>
+      </form>
+
+
+
+
+      <table class="table table-striped align-middle table-bordered  text-center">
+     <thead>
+          <tr>
+              <th>product Name</th>
+            <th>product Image</th>
+            <th>product Price</th>
+            <th>product Category</th>
+            <th>product Sale</th>
+            <th>product Description</th>
+            <th>Update</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody id="myData">
+         
+       
+        </tbody>
+      </table>
+  
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
