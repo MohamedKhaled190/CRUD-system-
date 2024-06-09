@@ -61,7 +61,6 @@ function deletproduct(id){
 function Update(ele){
     updateProduct.classList.add('d-inline-block')
     productName.value = ProductList[ele].ProdName
-    productImage.files[0].name = ProductList[ele].proimage
   productPrice.value = ProductList[ele].Price
   productCategory.value = ProductList[ele].ProdCategory
 productSale.checked = ProductList[ele].ProdSale
@@ -79,5 +78,6 @@ function insertUpdate(ele){
     }
     ProductList.push(product)
     desplayProduct()
+    updateProduct.classList.remove('d-inline-block')
 }
 
